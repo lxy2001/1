@@ -1,15 +1,27 @@
-//
-//  main.cpp
-//  1
-//
-//  Created by s20181106279 on 2019/6/28.
-//  Copyright © 2019 s20181106279. All rights reserved.
-//
-
 #include <iostream>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+int main (){
+    int data[4][4];
+    int a[4],b[4];
+    for(int i=0;i<4;i++){
+        for(int j=0;j<4;j++){
+            cin>>data[i][j];
+        }
+    }
+    for(int i=0;i<4;i++){
+        int p=0,sum=0,m=0;
+        for(int j=0;j<4;j++){
+            if(data[i][j]%2==0){
+                m++;
+                sum=sum+data[i][j];
+            }
+        }
+        cout<<"line"<<i+1<<" = "<<m<<";"<<" sum = "<<sum<<'\n';
+    }
+    
+    
+    
+    
+    
     return 0;
 }
